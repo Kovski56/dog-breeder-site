@@ -1,5 +1,7 @@
 "use server";
 
+import { sendInquiryEmail } from "@/lib/mailer";
+
 export type InquiryState = {
   status: "idle" | "success" | "error";
   message: string;
@@ -12,6 +14,7 @@ export async function submitInquiry(
 ): Promise<InquiryState> {
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
+  const phone = String(formData.get("phone") ?? "").trim();
   const message = String(formData.get("message") ?? "").trim();
 
   const errors: Record<string, string> = {};
@@ -29,9 +32,21 @@ export async function submitInquiry(
     };
   }
 
-  // TODO: deliver the inquiry — e.g. send an email, save to a database,
-  // or post to a form service. For now we just log it on the server.
-  console.log("New puppy inquiry:", { name, email, message });
+  try {
+    await sendInquiryEmail({
+      name,
+      email,
+      phone: phone || undefined,
+      message,
+    });
+  } catch (err) {
+    console.error("Failed to send inquiry email:", err);
+    return {
+      status: "error",
+      message:
+        "Sorry, something went wrong sending your inquiry. Please try again, or email us directly.",
+    };
+  }
 
   return {
     status: "success",
