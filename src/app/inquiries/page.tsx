@@ -11,7 +11,7 @@ export default function InquiriesPage() {
   return (
     <main className="flex-1">
       <div className="mx-auto w-full max-w-2xl px-6 py-16 md:py-20">
-        <h1 className="text-3xl font-semibold tracking-tight text-brand sm:text-4xl">
+        <h1 className="text-4xl font-bold tracking-tight text-brand sm:text-5xl">
           Puppy inquiries
         </h1>
         <p className="mt-4 leading-relaxed text-foreground/70">
