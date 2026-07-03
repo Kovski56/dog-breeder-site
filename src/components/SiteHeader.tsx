@@ -31,7 +31,6 @@ const navItems: NavItem[] = [
       { label: "Our Girls", href: "/our-dogs/our-girls" },
     ],
   },
-  { label: "Adoption", href: "/adoption" },
   {
     label: "Guardian Program",
     children: [
