@@ -41,11 +41,17 @@
   --font-sans: var(--font-amatic);
 }
 
+html {
+  /* Scale every rem-based size (all Tailwind text-* classes) up by 10% */
+  font-size: 110%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  /* Amatic SC runs small and narrow, so nudge size/spacing up for legibility */
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.015em;
+  /* Amatic SC caps at 700, so thicken the strokes to read bolder */
+  -webkit-text-stroke: 0.4px currentColor;
 }

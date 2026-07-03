@@ -78,46 +78,73 @@ export default function Home() {
       </section>
 
       {/* Upcoming litter */}
-      <section className="bg-brand-muted/40">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-brand">
+      <section id="upcoming-litter" className="bg-brand-muted/40">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-brand">
             Upcoming Litter
           </h2>
-          <p className="mx-auto mt-4 max-w-xl leading-relaxed text-foreground/70">
-            We are thrilled to introduce our upcoming litter. Reach out through the
-            inquiry page to learn more or join the waitlist.
+          <p className="mx-auto mt-3 max-w-xl text-center leading-relaxed text-foreground/70">
+            We are now accepting reservations for our upcoming litter from Ruby &amp; Roo.
           </p>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
-            {[
-              { name: "Sapphire", src: "/images/puppies/sapphire.jpg" },
-              { name: "Garnet",   src: "/images/puppies/garnet.jpg"   },
-              { name: "Diamond",  src: "/images/puppies/diamond.jpg"  },
-            ].map((puppy) => (
-              <div
-                key={puppy.name}
-                className="rounded-2xl border border-brand/10 bg-white/70 p-4"
-              >
-                <div className="relative mb-4 aspect-square w-full overflow-hidden rounded-xl">
-                  <Image
-                    src={puppy.src}
-                    alt={puppy.name}
-                    fill
-                    sizes="(min-width: 640px) 33vw, 100vw"
-                    className="object-cover"
-                  />
+          {/* Litter card */}
+          <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl bg-white shadow-md">
+            {/* Parent photos */}
+            <div className="grid grid-cols-2">
+              <div className="relative aspect-square w-full overflow-hidden">
+                <Image
+                  src="/images/dogs/ruby.jpg"
+                  alt="Ruby — Dam"
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-brand/70 py-1 text-center text-sm font-bold text-white">
+                  Ruby — Dam
                 </div>
-                <p className="text-xl font-bold text-brand">{puppy.name}</p>
               </div>
-            ))}
-          </div>
+              <div className="relative aspect-square w-full overflow-hidden">
+                <Image
+                  src="/images/dogs/roo.jpg"
+                  alt="Roo — Sire"
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-brand/70 py-1 text-center text-sm font-bold text-white">
+                  Roo — Sire
+                </div>
+              </div>
+            </div>
 
-          <Link
-            href="/inquiries"
-            className="mt-10 inline-block rounded-full bg-brand-accent px-6 py-3 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
-          >
-            Join the waitlist
-          </Link>
+            {/* Litter details */}
+            <div className="px-8 py-6">
+              <div className="space-y-2 text-foreground/80">
+                <p className="text-lg font-bold text-brand">Accepting Reservations</p>
+                <p><span className="font-bold">Estimated Breeding:</span> June / July 2026</p>
+                <p><span className="font-bold">Estimated Go Home:</span> Nov / Dec 2026</p>
+                <p><span className="font-bold">Size:</span> Small / Medium — 20–30 lbs</p>
+                <p><span className="font-bold">Breed:</span> Multi-gen Australian Labradoodles</p>
+              </div>
+
+              <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <Link
+                  href="/inquiries"
+                  className="inline-flex items-center justify-center rounded bg-brand-accent px-8 py-3 font-bold uppercase tracking-wide text-white shadow transition-opacity hover:opacity-90"
+                >
+                  Application
+                </Link>
+                <a
+                  href="https://www.alaa-labradoodles.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded border-2 border-brand px-8 py-3 font-bold text-brand transition-colors hover:bg-brand hover:text-white"
+                >
+                  ALAA — Breeder Profile
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

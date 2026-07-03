@@ -27,6 +27,51 @@ function getConfig() {
   };
 }
 
+export type ApplicationFields = Record<string, string>;
+
+export async function sendApplicationEmail(
+  fields: ApplicationFields,
+  subject: string,
+  fromLabel: string,
+): Promise<void> {
+  const config = getConfig();
+  if (!config) {
+    throw new Error(
+      "Email is not configured. Set SMTP_USER, SMTP_PASS, and INQUIRY_TO in .env.local.",
+    );
+  }
+
+  const transport = nodemailer.createTransport({
+    host: config.host,
+    port: config.port,
+    secure: config.port === 465,
+    auth: { user: config.user, pass: config.pass },
+  });
+
+  const lines = Object.entries(fields)
+    .map(([key, val]) => `${key}: ${val}`)
+    .join("\n");
+
+  await transport.sendMail({
+    from: `"${fromLabel}" <${config.user}>`,
+    to: config.to,
+    replyTo: fields["Email"] ? `<${fields["Email"]}>` : config.user,
+    subject,
+    text: `${fromLabel.toUpperCase()}\n${"=".repeat(40)}\n\n${lines}`,
+  });
+}
+
+/** @deprecated use sendApplicationEmail */
+export async function sendGuardianApplicationEmail(
+  fields: ApplicationFields,
+): Promise<void> {
+  return sendApplicationEmail(
+    fields,
+    `New Guardian Application — ${fields["Name"] ?? "Unknown"}`,
+    "Guardian Application",
+  );
+}
+
 export async function sendInquiryEmail(input: InquiryInput): Promise<void> {
   const config = getConfig();
   if (!config) {
