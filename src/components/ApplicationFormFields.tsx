@@ -323,7 +323,7 @@ export function ApplicationFields() {
           ]}
         />
         <RadioGroup
-          label="Please indicate how your Consultation Fee was paid"
+          label="Please indicate how your deposit was paid"
           name="paymentMethod"
           options={[
             { value: "paypal", label: "PayPal" },

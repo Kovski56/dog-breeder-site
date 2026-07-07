@@ -18,7 +18,7 @@ export default function GuardianApplicationPage() {
         <div className="mb-12 rounded-2xl bg-brand-muted/20 p-8 space-y-4">
           <h2 className="text-2xl font-bold text-brand">Application & Reservation Policy</h2>
           <p className="leading-relaxed text-foreground/80">
-            A <strong>Non-Refundable Puppy Consultation Fee of $500</strong> is initially required to reserve
+            A <strong>Refundable Puppy Deposit of $500</strong> is initially required to reserve
             a puppy in an upcoming litter and hold your picking spot. Payment in full is due when the puppy
             is 6 weeks of age.
           </p>
@@ -43,7 +43,7 @@ export default function GuardianApplicationPage() {
           <ul className="space-y-2 text-foreground/80">
             <li>• We typically take 5–6 reservations per litter, with the option of holding any puppy back for future breeding.</li>
             <li>• We <strong>do not</strong> reserve puppies by color, size, or sex within a litter — only by a specific litter.</li>
-            <li>• Puppies are picked in the order reservations and consultation fees are received.</li>
+            <li>• Puppies are picked in the order reservations and deposits are received.</li>
             <li>• Final payment is due when the puppy is 6 weeks old.</li>
             <li>• Holding charge is $50 per day if pickup is delayed past 8 weeks (must be arranged in advance).</li>
           </ul>

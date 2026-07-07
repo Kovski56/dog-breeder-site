@@ -10,6 +10,9 @@ const images = [
   { src: "/images/gallery/4.jpeg", alt: "Gallery photo 4" },
   { src: "/images/gallery/5.jpeg", alt: "Gallery photo 5" },
   { src: "/images/gallery/6.jpeg", alt: "Gallery photo 6" },
+  { src: "/images/puppies/sapphire.jpg", alt: "Sapphire the puppy" },
+  { src: "/images/puppies/garnet.jpg", alt: "Garnet the puppy" },
+  { src: "/images/puppies/diamond.jpg", alt: "Diamond the puppy" },
 ];
 
 const AUTO_DELAY = 5000;

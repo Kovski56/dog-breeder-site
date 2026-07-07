@@ -65,9 +65,9 @@ export default function SiteHeader() {
           <Image
             src="/images/logo.png"
             alt="Lily's Labradoodles"
-            width={180}
-            height={72}
-            className="h-14 w-auto object-contain"
+            width={320}
+            height={128}
+            className="h-20 w-auto object-contain sm:h-24"
             priority
           />
         </Link>

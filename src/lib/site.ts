@@ -3,15 +3,15 @@
 
 export const site = {
   name: "Lily's Labradoodles",
+  legalName: "Lilyslabradoodles LLC",
   tagline: "From our home to yours.",
   breed: "Australian Labradoodles",
-  // TODO: confirm real contact details
-  email: "hello@lilyslabradoodles.com",
-  phone: "(555) 555-5555",
+  email: "Lilyslabradoodles@gmail.com",
+  phone: "(909) 261-2913",
   location: "Rancho Cucamonga, CA",
   social: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://www.facebook.com/profile.php?id=61579250552219",
+    instagram: "https://www.instagram.com/michellegoodlander",
   },
 } as const;
 
@@ -27,7 +27,6 @@ export const badges = [
   { src: "/images/badges/ofa.png", alt: "OFA — Canine Health Information Center", href: "" },
   { src: "/images/badges/paw-print-genetics.png", alt: "Paw Print Genetics — Pedigrees Breeder", href: "" },
   { src: "/images/badges/good-dog.png", alt: "Good Dog — Excellent health testing", href: "" },
-  { src: "/images/badges/alaa-member.png", alt: "Australian Labradoodle Association of America — Member", href: "https://www.alaa-labradoodles.com/" },
-  { src: "/images/badges/alaa-platinum.png", alt: "ALAA Platinum Breeder", href: "https://www.alaa-labradoodles.com/" },
-  { src: "/images/badges/wala.png", alt: "World Australian Labradoodle Association", href: "" },
+  { src: "/images/badges/alaa-member.png", alt: "Australian Labradoodle Association of America — Member", href: "" },
+  { src: "/images/badges/alaa-platinum.png", alt: "ALAA Platinum Breeder", href: "" },
 ] as const;

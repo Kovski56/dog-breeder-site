@@ -9,32 +9,48 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-main-green-dark">
         <div className="grid w-full items-center md:grid-cols-2">
-          <div className="px-10 py-16 text-center md:py-24 md:pl-20 md:pr-6 md:text-right">
-            <h1 className="text-6xl font-bold leading-[0.95] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] sm:text-7xl md:text-8xl">
+          <div className="min-w-0 px-4 py-16 text-center sm:px-10 md:py-24 md:pl-20 md:pr-6 md:text-right">
+            <h1 className="text-[clamp(38px,7vw,104px)] font-bold leading-[0.95] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
               {site.breed}
             </h1>
-            <p className="mt-4 text-3xl font-bold text-white drop-shadow-[0_1px_6px_rgba(0,0,0,0.45)] sm:text-4xl md:text-5xl">
+            <p className="mt-3 font-handwriting text-[clamp(22px,5.5vw,72px)] font-bold tracking-normal text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
               From Our Home To Yours!
             </p>
             <div className="mt-10 flex justify-center md:justify-end">
               <Link
                 href="/inquiries"
-                className="inline-flex items-center justify-center bg-deep-olive px-14 py-5 text-2xl font-bold text-white shadow-md transition-transform hover:scale-[1.03] md:px-16 md:py-6 md:text-3xl"
-                style={{ borderRadius: "50% 14px 50% 14px" }}
+                className="relative flex h-24 w-[90%] items-center justify-center transition-transform hover:scale-[1.03] md:h-36 md:w-[26rem]"
               >
-                Apply To Adopt
+                {/* Leaf: sharp points at left & right. Top edge is an S/ogee
+                    sweep — crest left-of-center, then a concave curl into a
+                    slightly upturned right tip; bottom is a rounded belly.
+                    Stretches to fill the button box. */}
+                <svg
+                  viewBox="0 0 400 160"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  className="absolute inset-0 h-full w-full [filter:drop-shadow(0_6px_7px_rgba(0,0,0,0.25))]"
+                >
+                  <path
+                    d="M9 80 C60 20 170 10 215 22 C275 40 380 96 391 80 C300 150 100 150 9 80 Z"
+                    style={{ fill: "var(--deep-olive)" }}
+                  />
+                </svg>
+                <span className="relative z-10 whitespace-nowrap text-[1.35rem] font-bold text-white md:text-[1.7rem]">
+                  Apply To Adopt
+                </span>
               </Link>
             </div>
           </div>
 
-          <div className="flex items-end justify-center md:justify-start">
+          <div className="flex min-w-0 items-end justify-center md:justify-start">
             <Image
               src="/images/hero-doodle.png"
               alt="A happy Australian Labradoodle"
               width={700}
               height={1120}
               priority
-              className="h-auto w-auto max-h-[28rem] object-contain drop-shadow-xl md:max-h-[90vh]"
+              className="h-auto w-auto max-h-[28rem] max-w-full object-contain drop-shadow-xl md:max-h-[90vh] md:translate-x-[40px]"
             />
           </div>
         </div>
@@ -49,7 +65,7 @@ export default function Home() {
               alt="Lily carrying puppies in slings with a friend"
               width={800}
               height={800}
-              className="w-full rounded-2xl object-cover shadow-md"
+              className="mx-auto block w-full max-w-[68%] rounded-2xl object-cover shadow-md sm:max-w-[16rem] md:max-w-none"
             />
           </div>
           <div className="order-1 md:order-2">
@@ -121,9 +137,9 @@ export default function Home() {
             <div className="px-8 py-6">
               <div className="space-y-2 text-foreground/80">
                 <p className="text-lg font-bold text-brand">Accepting Reservations</p>
-                <p><span className="font-bold">Estimated Breeding:</span> June / July 2026</p>
-                <p><span className="font-bold">Estimated Go Home:</span> Nov / Dec 2026</p>
-                <p><span className="font-bold">Size:</span> Small / Medium — 20–30 lbs</p>
+                <p><span className="font-bold">Bred:</span> July 3 &amp; 5, 2026</p>
+                <p><span className="font-bold">Estimated Go Home:</span> September / October 2026</p>
+                <p><span className="font-bold">Size:</span> Mini / Small Medium</p>
                 <p><span className="font-bold">Breed:</span> Multi-gen Australian Labradoodles</p>
               </div>
 
@@ -134,14 +150,6 @@ export default function Home() {
                 >
                   Application
                 </Link>
-                <a
-                  href="https://www.alaa-labradoodles.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded border-2 border-brand px-8 py-3 font-bold text-brand transition-colors hover:bg-brand hover:text-white"
-                >
-                  ALAA — Breeder Profile
-                </a>
               </div>
             </div>
           </div>
@@ -160,7 +168,7 @@ export default function Home() {
       <section className="border-t border-black/5 bg-soft-beige">
         <div className="mx-auto w-full max-w-6xl px-6 py-16 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-brand">
-            Health-Tested &amp; Accredited
+            Our Partners
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-foreground/70">
             Proud to meet the standards of these trusted organizations.

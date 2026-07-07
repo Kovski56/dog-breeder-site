@@ -18,7 +18,7 @@ export default function InquiriesPage() {
         <div className="mb-12 rounded-2xl bg-brand-muted/20 p-8 space-y-4">
           <h2 className="text-2xl font-bold text-brand">Application & Reservation Policy</h2>
           <p className="leading-relaxed text-foreground/80">
-            A <strong>Non-Refundable Puppy Consultation Fee of $500</strong> is initially required to reserve
+            A <strong>Refundable Puppy Deposit of $500</strong> is initially required to reserve
             a puppy in an upcoming litter and hold your picking spot. Payment in full is due when the puppy
             is 6 weeks of age.
           </p>
@@ -43,7 +43,7 @@ export default function InquiriesPage() {
           <ul className="space-y-2 text-foreground/80">
             <li>• We typically take 5–6 reservations per litter, with the option of holding any puppy back for future breeding.</li>
             <li>• We <strong>do not</strong> reserve puppies by color, size, or sex within a litter — only by a specific litter.</li>
-            <li>• Puppies are picked in the order reservations and consultation fees are received. When you are assigned to a litter, you will be assigned a picking spot — this is the order you will choose your puppy from the litter.</li>
+            <li>• Puppies are picked in the order reservations and deposits are received. When you are assigned to a litter, you will be assigned a picking spot — this is the order you will choose your puppy from the litter.</li>
             <li>• Final payment is due when the puppy is 6 weeks old.</li>
             <li>• You will choose your puppy and take it home around 8 weeks of age. Holding charge is $50 per day if pickup is delayed past 8 weeks (must be arranged in advance).</li>
           </ul>
@@ -60,6 +60,26 @@ export default function InquiriesPage() {
             <p>(909) 261-2913</p>
             <p>Lilyslabradoodles@gmail.com</p>
           </div>
+        </div>
+
+        {/* Sales contract & health agreement */}
+        <div className="mb-10 flex flex-col items-center gap-3 rounded-2xl border border-brand/15 bg-white p-6 text-center shadow-sm sm:flex-row sm:justify-between sm:text-left">
+          <p className="text-foreground/80">
+            Please review our{" "}
+            <span className="font-bold text-brand">Sales Contract &amp; Health Agreement</span>{" "}
+            before submitting your application.
+          </p>
+          <a
+            href="/documents/sales-contract-and-health-agreement.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded bg-brand px-6 py-3 font-bold text-white shadow transition-opacity hover:opacity-90"
+          >
+            <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V18a2 2 0 01-2 2z" />
+            </svg>
+            View Contract (PDF)
+          </a>
         </div>
 
         {/* The form */}
