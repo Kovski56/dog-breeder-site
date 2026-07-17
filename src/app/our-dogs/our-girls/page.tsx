@@ -15,24 +15,28 @@ export default function OurGirlsPage() {
             imageAlt="Ruby - our dam"
             details={[
               { label: "Role", value: "Dam (Mother)" },
-              { label: "Breed", value: "Multi-gen Australian Labradoodle" },
+              { label: "ALAA", value: "Pending" },
+              { label: "Color", value: "Red Tuxedo" },
+              { label: "Size", value: "Medium / Small — 15 inches, 34 lbs" },
+              {
+                label: "Health Clearances",
+                value:
+                  "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, DM Clear, HNP Clear, PRA Clear, CERF",
+              },
             ]}
-            note="Health information coming soon."
+            note="Other testing results available upon request."
           />
           <DogCard
-            name="Lilyslabradoodles Lucille Doll"
+            name="Lucille Doll of Lilyslabradoodles"
             imageSrc="/images/dogs/lucille.jpg"
             imageAlt="Lucille Doll"
-            imagePosition="object-top"
+            imageFit="contain"
             details={[
               { label: "WALA", value: "Pending" },
               { label: "ALAA", value: "Pending" },
               { label: "Color", value: "Chocolate Phantom Tuxedo" },
-              { label: "Size", value: "Mini — 16 inches, 25–26 lbs" },
-              {
-                label: "Health Clearances (pending)",
-                value: "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, CERF",
-              },
+              { label: "Size", value: "Small Medium" },
+              { label: "Weight", value: "30 lbs" },
             ]}
             note="Other testing results available upon request."
           />

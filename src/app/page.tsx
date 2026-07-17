@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { badges, site } from "@/lib/site";
 import GalleryCarousel from "@/components/GalleryCarousel";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 export default function Home() {
   return (
@@ -162,6 +163,21 @@ export default function Home() {
           Our Dogs &amp; Puppies
         </h2>
         <GalleryCarousel />
+      </section>
+
+      {/* Reviews */}
+      <section className="bg-brand-muted/30">
+        <div className="mx-auto w-full max-w-6xl px-6 py-16">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-brand">
+            What Our Families Say
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-foreground/70">
+            Reviews from our Lily&apos;s Labradoodles families on Google.
+          </p>
+          <div className="mt-10">
+            <ReviewsCarousel />
+          </div>
+        </div>
       </section>
 
       {/* Health-testing & membership badges */}

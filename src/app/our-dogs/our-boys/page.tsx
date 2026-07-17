@@ -18,9 +18,15 @@ export default function OurBoysPage() {
             imageAlt="Monkey — Sir Monk Esq. of Lilyslabradoodles"
             details={[
               { label: "Call Name", value: "Monkey" },
-              { label: "Role", value: "Our resident boy" },
+              { label: "ALAA", value: "Pending" },
+              { label: "Color", value: "Red Tuxedo" },
+              { label: "Size", value: "Medium — 17 inches, 35 lbs" },
+              {
+                label: "Health Clearances",
+                value: "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, CERF",
+              },
             ]}
-            note="Our beloved family boy."
+            note="Other testing results available upon request."
           />
         </div>
 

@@ -13,6 +13,8 @@ type DogCardProps = {
   note?: string;
   /** Tailwind object-position class, e.g. "object-top". Defaults to centered. */
   imagePosition?: string;
+  /** "cover" (default) crops to fill the square; "contain" shows the whole image. */
+  imageFit?: "cover" | "contain";
 };
 
 export default function DogCard({
@@ -22,15 +24,20 @@ export default function DogCard({
   details,
   note,
   imagePosition = "object-center",
+  imageFit = "cover",
 }: DogCardProps) {
   return (
     <div className="overflow-hidden rounded-2xl bg-white shadow-md">
-      <div className="relative aspect-square w-full">
+      <div
+        className={`relative aspect-square w-full ${
+          imageFit === "contain" ? "bg-soft-beige" : ""
+        }`}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className={`object-cover ${imagePosition}`}
+          className={`${imageFit === "contain" ? "object-contain" : "object-cover"} ${imagePosition}`}
           sizes="(max-width: 640px) 100vw, 384px"
         />
       </div>
