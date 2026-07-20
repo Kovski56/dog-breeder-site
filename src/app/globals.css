@@ -11,6 +11,7 @@
   --soft-gray: #cccccc;
   --rich-charcoal: #333333;
   --light-yellow: #f8f4b2;
+  --light-green: #dbe4b3;
 
   /* Semantic tokens used across the site */
   --background: var(--soft-beige);
@@ -37,6 +38,7 @@
   --color-soft-gray: var(--soft-gray);
   --color-rich-charcoal: var(--rich-charcoal);
   --color-light-yellow: var(--light-yellow);
+  --color-light-green: var(--light-green);
 
   --font-sans: var(--font-shantell);
   /* Handwritten marker font — use with the `font-handwriting` class */

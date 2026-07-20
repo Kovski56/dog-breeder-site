@@ -22,18 +22,16 @@ export default function Home() {
                 href="/inquiries"
                 className="relative flex h-24 w-[90%] items-center justify-center transition-transform hover:scale-[1.03] md:h-36 md:w-[26rem]"
               >
-                {/* Leaf: sharp points at left & right. Top edge is an S/ogee
-                    sweep — crest left-of-center, then a concave curl into a
-                    slightly upturned right tip; bottom is a rounded belly.
-                    Stretches to fill the button box. */}
+                {/* Client-provided leaf SVG (leaf.svg). Stretches to fill the
+                    button box. */}
                 <svg
-                  viewBox="0 0 400 160"
+                  viewBox="0 0 754 339"
                   preserveAspectRatio="none"
                   aria-hidden="true"
                   className="absolute inset-0 h-full w-full [filter:drop-shadow(0_6px_7px_rgba(0,0,0,0.25))]"
                 >
                   <path
-                    d="M9 80 C60 20 170 10 215 22 C275 40 380 96 391 80 C300 150 100 150 9 80 Z"
+                    d="M 10 154 C 42 87, 121 45, 214 34 C 315 21, 395 45, 487 88 C 575 129, 673 163, 742 155 C 698 197, 624 239, 545 270 C 457 304, 374 312, 300 298 C 221 283, 168 247, 119 199 C 76 158, 41 145, 10 154 Z"
                     style={{ fill: "var(--deep-olive)" }}
                   />
                 </svg>
@@ -174,7 +172,7 @@ export default function Home() {
           <p className="mx-auto mt-3 max-w-xl text-center text-foreground/70">
             Reviews from our Lily&apos;s Labradoodles families on Google.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 -mx-6 sm:mx-0">
             <ReviewsCarousel />
           </div>
         </div>

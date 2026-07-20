@@ -36,13 +36,22 @@ const navItems: NavItem[] = [
     children: [
       { label: "Guardian Program", href: "/guardian-program" },
       { label: "Guardian Application", href: "/guardian-program/application" },
+      {
+        label:
+          "Contact Michelle at Lilyslabradoodles@gmail.com for additional information about Guardianship opportunities.",
+        href: "mailto:Lilyslabradoodles@gmail.com",
+      },
     ],
   },
   { label: "FAQ", href: "/faq" },
   {
     label: "Resources",
     children: [
-      { label: "Shopping Essentials", href: "/resources/shopping" },
+      { label: "Food & Supplements", href: "/resources" },
+      {
+        label: "Shopping Essentials (Amazon)",
+        href: "https://www.amazon.com/hz/wishlist/ls/3G0FTAFNV4PWJ?ref_=wl_share",
+      },
     ],
   },
   { label: "Contact Us", href: "/contact" },
@@ -88,15 +97,41 @@ export default function SiteHeader() {
                 </button>
                 {desktopOpen === item.label && (
                   <div className="absolute left-0 top-full z-50 min-w-[180px] rounded-lg border border-gray-100 bg-white py-1 shadow-lg">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-soft-beige hover:text-brand"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                    {item.children.map((child) => {
+                      if (child.href.startsWith("mailto:")) {
+                        return (
+                          <a
+                            key={child.href}
+                            href={child.href}
+                            className="block w-60 whitespace-normal px-4 py-2 text-xs leading-snug text-foreground/80 transition-colors hover:bg-soft-beige hover:text-brand"
+                          >
+                            {child.label}
+                          </a>
+                        );
+                      }
+                      if (child.href.startsWith("http")) {
+                        return (
+                          <a
+                            key={child.href}
+                            href={child.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-soft-beige hover:text-brand"
+                          >
+                            {child.label}
+                          </a>
+                        );
+                      }
+                      return (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-soft-beige hover:text-brand"
+                        >
+                          {child.label}
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -143,16 +178,44 @@ export default function SiteHeader() {
                   </button>
                   {mobileExpanded === item.label && (
                     <div className="mb-1 ml-4 flex flex-col border-l-2 border-soft-beige pl-4">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="py-2 text-sm text-foreground hover:text-brand"
-                          onClick={() => setMobileOpen(false)}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                      {item.children.map((child) => {
+                        if (child.href.startsWith("mailto:")) {
+                          return (
+                            <a
+                              key={child.href}
+                              href={child.href}
+                              className="py-2 text-xs leading-snug text-foreground/80 hover:text-brand"
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {child.label}
+                            </a>
+                          );
+                        }
+                        if (child.href.startsWith("http")) {
+                          return (
+                            <a
+                              key={child.href}
+                              href={child.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="py-2 text-sm text-foreground hover:text-brand"
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {child.label}
+                            </a>
+                          );
+                        }
+                        return (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className="py-2 text-sm text-foreground hover:text-brand"
+                            onClick={() => setMobileOpen(false)}
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
                     </div>
                   )}
                 </div>

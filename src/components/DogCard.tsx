@@ -27,10 +27,11 @@ export default function DogCard({
   imageFit = "cover",
 }: DogCardProps) {
   return (
-    <div className="overflow-hidden rounded-2xl bg-white shadow-md">
+    <div className="rounded-[1.4rem] bg-brand p-1.5 shadow-md">
+      <div className="overflow-hidden rounded-2xl bg-light-green ring-1 ring-black/5">
       <div
         className={`relative aspect-square w-full ${
-          imageFit === "contain" ? "bg-soft-beige" : ""
+          imageFit === "contain" ? "bg-light-green" : ""
         }`}
       >
         <Image
@@ -54,6 +55,7 @@ export default function DogCard({
         {note && (
           <p className="mt-4 text-xs italic text-foreground/60">{note}</p>
         )}
+      </div>
       </div>
     </div>
   );

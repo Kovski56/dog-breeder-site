@@ -128,8 +128,8 @@ export default function ReviewsCarousel() {
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {reviews.map((r) => (
-            <div key={r.name} className="w-full flex-none px-1">
-              <div className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-md ring-1 ring-black/5">
+            <div key={r.name} className="w-full flex-none px-0 sm:px-1">
+              <div className="flex h-full flex-col rounded-none bg-white p-8 shadow-md ring-1 ring-black/5 sm:rounded-2xl">
                 <div className="flex items-center gap-3">
                   <span
                     className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-lg font-bold text-white"
