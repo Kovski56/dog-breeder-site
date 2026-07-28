@@ -53,6 +53,70 @@ export default function OurBoysPage() {
             ]}
             note="This dog contributed genetically to the breeding program. Other testing results available upon request."
           />
+          <DogCard
+            name="Berrybrook's Sir Calvin @ Sacto Labradoodles"
+            imageSrc="/images/dogs/calvin.png"
+            imageAlt="Sir Calvin — stud"
+            details={[
+              { label: "WALA", value: "00065305" },
+              { label: "ALAA", value: "100733" },
+              { label: "Color", value: "Red Tuxedo" },
+              { label: "Size", value: "Medium — 20 inches, 39 lbs" },
+              {
+                label: "Health Clearances",
+                value: "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, CERF",
+              },
+            ]}
+            note="This dog contributed genetically to the breeding program. Other testing results available upon request."
+          />
+          <DogCard
+            name="Oliver of LoveALabradoodle"
+            imageSrc="/images/dogs/oliver.png"
+            imageAlt="Oliver — stud"
+            details={[
+              { label: "ALAA", value: "Registered" },
+              { label: "Color", value: "Red Tuxedo" },
+              { label: "Size", value: "Mini — 15 inches, ~27 lbs (est.)" },
+              {
+                label: "Health Clearances",
+                value: "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, CERF",
+              },
+            ]}
+            note="This dog contributed genetically to the breeding program. Other testing results available upon request."
+          />
+          <DogCard
+            name="South Florida Presley @ Sacto Labradoodles"
+            imageSrc="/images/dogs/presley.png"
+            imageAlt="Presley — stud"
+            details={[
+              { label: "WALA", value: "00059873" },
+              { label: "ALAA", value: "126085" },
+              { label: "Color", value: "Red" },
+              { label: "Size", value: "Medium — 20 inches, 29 lbs" },
+              {
+                label: "Health Clearances",
+                value: "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, CERF",
+              },
+            ]}
+            note="This dog contributed genetically to the breeding program. Other testing results available upon request."
+          />
+          <DogCard
+            name="Rudy of County Labradoodles"
+            imageSrc="/images/dogs/rudy.png"
+            imageAlt="Rudy — stud"
+            imageFit="contain"
+            details={[
+              { label: "WALA", value: "Registered" },
+              { label: "ALAA", value: "Registered" },
+              { label: "Color", value: "Red" },
+              { label: "Size", value: "Medium — 17 inches, 35 lbs" },
+              {
+                label: "Health Clearances",
+                value: "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, CERF",
+              },
+            ]}
+            note="This dog contributed genetically to the breeding program. Other testing results available upon request."
+          />
         </div>
       </section>
     </main>

@@ -75,7 +75,7 @@ export default function Home() {
               rescue who was a cherished member of our family for 17 years. In searching for a dog with that same
               gentle, loyal spirit, we discovered Australian Labradoodles: a breed renowned for their sweet
               temperament, trainability, and eagerness to please. After years of dedicated research, we welcomed
-              our own Australian Labradoodles into our home and never looked back.
+              our own Australian Labradoodles.
             </p>
             <p className="mt-4 leading-relaxed text-foreground/70">
               As a retired Adoption Social Worker with 35 years of experience placing children with loving
@@ -137,7 +137,7 @@ export default function Home() {
               <div className="space-y-2 text-foreground/80">
                 <p className="text-lg font-bold text-brand">Accepting Reservations</p>
                 <p><span className="font-bold">Bred:</span> July 3 &amp; 5, 2026</p>
-                <p><span className="font-bold">Estimated Go Home:</span> September / October 2026</p>
+                <p><span className="font-bold">Estimated Go Home:</span> November / December 2026</p>
                 <p><span className="font-bold">Size:</span> Mini / Small Medium</p>
                 <p><span className="font-bold">Breed:</span> Multi-gen Australian Labradoodles</p>
               </div>

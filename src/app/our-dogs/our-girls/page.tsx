@@ -33,10 +33,26 @@ export default function OurGirlsPage() {
             imageFit="contain"
             details={[
               { label: "WALA", value: "Pending" },
-              { label: "ALAA", value: "Pending" },
+              { label: "ALAA", value: "151187" },
               { label: "Color", value: "Chocolate Phantom Tuxedo" },
               { label: "Size", value: "Small Medium" },
               { label: "Weight", value: "30 lbs" },
+            ]}
+            note="Other testing results available upon request."
+          />
+          <DogCard
+            name="Lily"
+            imageSrc="/images/dogs/lily.png"
+            imageAlt="Lily"
+            details={[
+              { label: "Status", value: "Retired" },
+              { label: "Color", value: "Apricot Parti" },
+              { label: "Size", value: "Medium — 19 inches, 42 lbs" },
+              {
+                label: "Health Clearances",
+                value:
+                  "OFA Hips/Elbows, Heart Normal, vWD Clear, EIC Clear, DM Clear, HNP Clear, PRA Clear, CERF",
+              },
             ]}
             note="Other testing results available upon request."
           />
