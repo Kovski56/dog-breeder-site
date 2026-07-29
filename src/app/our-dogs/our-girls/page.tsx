@@ -15,7 +15,7 @@ export default function OurGirlsPage() {
             imageAlt="Ruby - our dam"
             details={[
               { label: "Role", value: "Dam (Mother)" },
-              { label: "ALAA", value: "Pending" },
+              { label: "ALAA", value: "144935" },
               { label: "Color", value: "Red Tuxedo" },
               { label: "Size", value: "Medium / Small — 15 inches, 34 lbs" },
               {

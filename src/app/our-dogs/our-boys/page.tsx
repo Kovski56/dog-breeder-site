@@ -18,7 +18,7 @@ export default function OurBoysPage() {
             imageAlt="Monkey — Sir Monk Esq. of Lilyslabradoodles"
             details={[
               { label: "Call Name", value: "Monkey" },
-              { label: "ALAA", value: "Pending" },
+              { label: "ALAA", value: "144927" },
               { label: "Color", value: "Red Tuxedo" },
               { label: "Size", value: "Medium — 17 inches, 35 lbs" },
               {
