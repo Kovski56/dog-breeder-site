@@ -10,7 +10,7 @@ export default function OurGirlsPage() {
         <div className="grid gap-8 sm:grid-cols-2">
           {/* Full health info pending from client */}
           <DogCard
-            name="Ruby"
+            name="Lily's Labradoodles Ruby Tuesday"
             imageSrc="/images/dogs/ruby.jpg"
             imageAlt="Ruby - our dam"
             details={[
@@ -27,7 +27,7 @@ export default function OurGirlsPage() {
             note="Other testing results available upon request."
           />
           <DogCard
-            name="Lucille Doll of Lilyslabradoodles"
+            name="Lily's Labradoodles Lucille Doll"
             imageSrc="/images/dogs/lucille.jpg"
             imageAlt="Lucille Doll"
             imageFit="contain"

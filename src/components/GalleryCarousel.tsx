@@ -12,9 +12,6 @@ const images = [
   { src: "/images/gallery/6.jpeg", alt: "Gallery photo 6" },
   { src: "/images/gallery/7.jpeg", alt: "Gallery photo 7" },
   { src: "/images/gallery/8.jpeg", alt: "Gallery photo 8" },
-  { src: "/images/puppies/sapphire.jpg", alt: "Sapphire the puppy" },
-  { src: "/images/puppies/garnet.jpg", alt: "Garnet the puppy" },
-  { src: "/images/puppies/diamond.jpg", alt: "Diamond the puppy" },
 ];
 
 const AUTO_DELAY = 5000;

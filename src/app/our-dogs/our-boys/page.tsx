@@ -6,7 +6,7 @@ export default function OurBoysPage() {
       <section className="mx-auto w-full max-w-6xl px-6 py-16">
         <h1 className="mb-3 text-center text-4xl font-bold text-brand">Our Boys</h1>
         <p className="mx-auto mb-12 max-w-2xl text-center text-foreground/70">
-          Monkey is our own boy here at Lily&apos;s Labradoodles. Our stud dogs below have
+          Monkey is our own boy here at Lily&apos;s Labradoodles. The outside studs below have
           each contributed genetically to our breeding program.
         </p>
 
@@ -30,8 +30,8 @@ export default function OurBoysPage() {
           />
         </div>
 
-        {/* Stud dogs — each requires the Association caveat */}
-        <h2 className="mb-2 text-center text-2xl font-bold text-brand">Our Stud Dogs</h2>
+        {/* Contributing outside studs — each requires the Association caveat */}
+        <h2 className="mb-2 text-center text-2xl font-bold text-brand">Contributing Outside Studs</h2>
         <p className="mx-auto mb-8 max-w-2xl text-center text-sm text-foreground/60">
           The following males have each contributed genetically to Lily&apos;s Labradoodles&apos;
           breeding program.
