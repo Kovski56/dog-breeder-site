@@ -12,6 +12,14 @@ const images = [
   { src: "/images/gallery/6.jpeg", alt: "Gallery photo 6" },
   { src: "/images/gallery/7.jpeg", alt: "Gallery photo 7" },
   { src: "/images/gallery/8.jpeg", alt: "Gallery photo 8" },
+  { src: "/images/gallery/9.jpg", alt: "Gallery photo 9" },
+  { src: "/images/gallery/10.jpg", alt: "Gallery photo 10" },
+  { src: "/images/gallery/11.jpg", alt: "Gallery photo 11" },
+  { src: "/images/gallery/12.jpg", alt: "Gallery photo 12" },
+  { src: "/images/gallery/13.jpg", alt: "Gallery photo 13" },
+  { src: "/images/gallery/14.jpg", alt: "Gallery photo 14" },
+  { src: "/images/gallery/15.jpg", alt: "Gallery photo 15" },
+  { src: "/images/gallery/16.jpg", alt: "Gallery photo 16" },
 ];
 
 const AUTO_DELAY = 5000;
