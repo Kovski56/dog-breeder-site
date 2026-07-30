@@ -65,7 +65,7 @@ const faqs: Faq[] = [
   },
   {
     q: "How much do your puppies cost?",
-    a: "All of our puppies are $3,000 plus California sales tax (8.75%), and each is sold on a spay/neuter, non-breeding agreement. A non-refundable $500 reservation fee holds your spot on the litter of your choice. We accept five to six reservations per litter prior to birth, and once the puppies arrive we may reopen reservations if the number of available pups allows. The final balance is due when the puppies are six weeks old. We accept check, cash, Venmo, and Zelle. Reservation lists fill quickly, and a space cannot be held until your $500 reservation fee has been received.",
+    a: "All of our puppies are $3,000 plus California sales tax (8.75%), and each is sold on a spay/neuter, non-breeding agreement. A refundable $500 reservation fee holds your spot on the litter of your choice. We accept five to six reservations per litter prior to birth, and once the puppies arrive we may reopen reservations if the number of available pups allows. The final balance is due when the puppies are six weeks old. We accept check, cash, Venmo, and Zelle. Reservation lists fill quickly, and a space cannot be held until your $500 reservation fee has been received.",
   },
   {
     q: "Extended Training",
