@@ -20,6 +20,7 @@ const images = [
   { src: "/images/gallery/14.jpg", alt: "Gallery photo 14" },
   { src: "/images/gallery/15.jpg", alt: "Gallery photo 15" },
   { src: "/images/gallery/16.jpg", alt: "Gallery photo 16" },
+  { src: "/images/gallery/17.jpg", alt: "Gallery photo 17" },
 ];
 
 const AUTO_DELAY = 5000;

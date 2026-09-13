@@ -60,6 +60,13 @@ const reviews: Review[] = [
     date: "5 months ago",
     text: "Best thing we've done as a family, hands down. Our doodle is the gentlest, snuggliest dog and he settled into our chaos right away. The grandkids are completely obsessed with him. Thank you Michelle for everything — he really is the perfect fit.",
   },
+  {
+    name: "Lucy's Family",
+    initial: "L",
+    color: "#8b7d6b",
+    date: "9 months ago",
+    text: "After doing extensive research looking for an ALD breeder, we found the perfect match with Michelle from Lily's Labradoodles. It was important to us to have a breeder with strong ethics and who was motivated solely by her passion and love for the breed. We appreciated the screening process as well. It is important to Michelle that her puppies go to homes that are well suited for the breed. And above all of that, Michelle has continued to be a support to us long after we brought our beautiful pup home. We are absolutely over the moon with our puppy, Lucy, that we brought home in December 2025. Not only is she beautiful, but she is sweet and well tempered. We are constantly being asked about our pup and where she came from. Can't say enough positive things about Lily's Labradoodles and Michelle.",
+  },
 ];
 
 const AUTO_DELAY = 6000;
