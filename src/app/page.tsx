@@ -120,7 +120,7 @@ export default function Home() {
               <div className="space-y-2 text-foreground/80">
                 <p className="text-lg font-bold text-brand">Accepting Reservations</p>
                 <p><span className="font-bold">Bred:</span> July 3 &amp; 5, 2026</p>
-                <p><span className="font-bold">Estimated Go Home:</span> November / December 2026</p>
+                <p><span className="font-bold">Estimated Go Home:</span> November 2026</p>
                 <p><span className="font-bold">Size:</span> Mini / Small Medium</p>
                 <p><span className="font-bold">Breed:</span> Multi-gen Australian Labradoodles</p>
               </div>
