@@ -96,7 +96,7 @@ export default function Home() {
       <section id="upcoming-litter" className="bg-brand-muted/40">
         <div className="mx-auto w-full max-w-6xl px-6 py-20">
           <h2 className="text-center text-3xl font-bold tracking-tight text-brand">
-            Upcoming Litter
+            Available Puppies
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center leading-relaxed text-foreground/70">
             We are now accepting reservations for our upcoming litter from Ruby &amp; Roo.
