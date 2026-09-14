@@ -99,37 +99,20 @@ export default function Home() {
             Available Puppies
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center leading-relaxed text-foreground/70">
-            We are now accepting reservations for our upcoming litter from Ruby &amp; Roo.
+            We are now accepting reservations for this wonderful litter from Ruby &amp; Roo.
           </p>
 
           {/* Litter card */}
           <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl bg-white shadow-md">
-            {/* Parent photos */}
-            <div className="grid grid-cols-2">
-              <div className="relative aspect-square w-full overflow-hidden">
-                <Image
-                  src="/images/dogs/ruby.jpg"
-                  alt="Ruby — Dam"
-                  fill
-                  sizes="50vw"
-                  className="object-cover"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-brand/70 py-1 text-center text-sm font-bold text-white">
-                  Ruby — Dam
-                </div>
-              </div>
-              <div className="relative aspect-square w-full overflow-hidden">
-                <Image
-                  src="/images/dogs/roo.jpg"
-                  alt="Roo — Sire"
-                  fill
-                  sizes="50vw"
-                  className="object-cover"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-brand/70 py-1 text-center text-sm font-bold text-white">
-                  Roo — Sire
-                </div>
-              </div>
+            {/* Litter photo */}
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <Image
+                src="/images/gallery/17.jpg"
+                alt="Ruby & Roo's puppies"
+                fill
+                sizes="(min-width: 640px) 512px, 100vw"
+                className="object-cover"
+              />
             </div>
 
             {/* Litter details */}
