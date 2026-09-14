@@ -141,7 +141,7 @@ export default function Home() {
       {/* Photo gallery */}
       <section className="mx-auto w-full max-w-6xl px-6 py-16">
         <h2 className="mb-10 text-center text-3xl font-bold tracking-tight text-brand">
-          Our Dogs &amp; Puppies
+          Family Photos
         </h2>
         <GalleryCarousel />
       </section>
