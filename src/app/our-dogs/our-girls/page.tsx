@@ -34,7 +34,7 @@ export default function OurGirlsPage() {
             details={[
               { label: "WALA", value: "Pending" },
               { label: "ALAA", value: "151187" },
-              { label: "Color", value: "Chocolate Phantom Tuxedo" },
+              { label: "Color", value: "Red" },
               { label: "Size", value: "Small Medium" },
               { label: "Weight", value: "30 lbs" },
             ]}
