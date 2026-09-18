@@ -98,11 +98,10 @@ export default function ResourcesPage() {
               </li>
             </ul>
             <p className="mt-4 text-sm italic text-foreground/60">
-              New customers may need a breeder order code — contact us and we&apos;ll be glad to
-              provide it.
+              For more information, click the link below or call 1-800-474-7044.
             </p>
             <a
-              href="https://www.nuvet.com"
+              href="https://www.nuvet.com/379411"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center justify-center rounded bg-brand px-6 py-3 font-bold text-white shadow transition-opacity hover:opacity-90"
