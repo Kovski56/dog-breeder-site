@@ -4,6 +4,7 @@
 export const site = {
   name: "Lily's Labradoodles",
   legalName: "Lilyslabradoodles LLC",
+  url: "https://www.lilyslabradoodles.com",
   tagline: "From our home to yours.",
   breed: "Australian Labradoodles",
   email: "Lilyslabradoodles@gmail.com",

@@ -20,12 +20,37 @@ const caveat = Caveat({
   variable: "--font-caveat",
 });
 
+const description = `${site.breed} breeder in ${site.location}. ${site.tagline}`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} — ${site.tagline}`,
     template: `%s — ${site.name}`,
   },
-  description: site.tagline,
+  description,
+  openGraph: {
+    title: `${site.name} — ${site.tagline}`,
+    description,
+    url: site.url,
+    siteName: site.name,
+    images: [
+      {
+        url: "/images/gallery/5.jpeg",
+        width: 2047,
+        height: 1558,
+        alt: `A family with their new ${site.breed} puppy`,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} — ${site.tagline}`,
+    description,
+    images: ["/images/gallery/5.jpeg"],
+  },
 };
 
 export default function RootLayout({
