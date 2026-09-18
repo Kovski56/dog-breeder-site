@@ -27,7 +27,7 @@ export const badges = [
   { src: "/images/badges/ofa.png", alt: "OFA — Canine Health Information Center", href: "" },
   { src: "/images/badges/paw-print-genetics.png", alt: "Paw Print Genetics — Pedigrees Breeder", href: "" },
   { src: "/images/badges/good-dog.png", alt: "Good Dog — Excellent health testing", href: "" },
-  { src: "/images/badges/alaa-member.png", alt: "Australian Labradoodle Association of America — Member", href: "" },
+  { src: "/images/badges/alaa-member.png", alt: "Australian Labradoodle Association of America — Member", href: "https://alaa-labradoodles.com" },
   { src: "/images/badges/alaa-platinum.png", alt: "ALAA Platinum Breeder", href: "" },
   { src: "/images/badges/nuvet-labs-proud-partner.jpg", alt: "NuVet Labs — Proud Partner", href: "" },
   { src: "/images/badges/baxter-and-bella-partners.jpg", alt: "Baxter & Bella — Partners", href: "" },
