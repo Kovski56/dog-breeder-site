@@ -52,6 +52,10 @@ const navItems: NavItem[] = [
         label: "Shopping Essentials (Amazon)",
         href: "https://www.amazon.com/hz/wishlist/ls/3G0FTAFNV4PWJ?ref_=wl_share",
       },
+      {
+        label: "Shopping Essentials (Litter)",
+        href: "https://www.chewy.com/chewy-paper-pellet-dog-litter/dp/3274462",
+      },
     ],
   },
   { label: "Contact Us", href: "/contact" },
