@@ -107,7 +107,7 @@ export default function Home() {
             {/* Litter photo */}
             <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
-                src="/images/gallery/17.jpg"
+                src="/images/gallery/18.jpg"
                 alt="Ruby & Roo's puppies"
                 fill
                 sizes="(min-width: 640px) 512px, 100vw"
