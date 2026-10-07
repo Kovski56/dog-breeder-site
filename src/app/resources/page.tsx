@@ -59,7 +59,7 @@ export default function ResourcesPage() {
               </li>
             </ul>
             <a
-              href="https://lifesabundance.com"
+              href="https://lifesabundance.com/lilyslabradoodles"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center justify-center rounded bg-brand px-6 py-3 font-bold text-white shadow transition-opacity hover:opacity-90"
