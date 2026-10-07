@@ -121,7 +121,20 @@ const faqs: Faq[] = [
   },
   {
     q: "Female vs. Male Puppies",
-    a: "All of our puppies are required to be spayed or neutered by six months of age as part of your adoption contract. Because they are altered so young, the differences you might expect between the sexes never really come into play — without the influence of sex hormones at this age, there are no known temperament differences between males and females. For that reason, we encourage you to choose your puppy based on the temperament and personality of the individual pup rather than gender. It is also worth considering the gender of any dog you may already have at home.",
+    a: (
+      <div className="space-y-4">
+        <p>
+          {"All of our puppies are required to be spayed or neutered by six months of age as part of your adoption contract. Because they are altered so young, the differences you might expect between the sexes never really come into play — without the influence of sex hormones at this age, there are no known temperament differences between males and females. For that reason, we encourage you to choose your puppy based on the temperament and personality of the individual pup rather than gender. It is also worth considering the gender of any dog you may already have at home."}
+        </p>
+        <Image
+          src="/images/faq/male-vs-female.jpg"
+          alt="Male vs. female Australian Labradoodles — what's the difference, plus common myths and the facts"
+          width={839}
+          height={1140}
+          className="mx-auto mt-1 w-full max-w-xl rounded-xl shadow-sm"
+        />
+      </div>
+    ),
   },
   {
     q: "Health Testing for Mom and Dad Dogs",
