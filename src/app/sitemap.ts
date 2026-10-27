@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/our-dogs/our-girls", priority: 0.6 },
     { path: "/our-dogs/our-boys", priority: 0.6 },
     { path: "/resources", priority: 0.5 },
+    { path: "/resources/training", priority: 0.5 },
     { path: "/faq", priority: 0.5 },
     { path: "/contact", priority: 0.5 },
   ];

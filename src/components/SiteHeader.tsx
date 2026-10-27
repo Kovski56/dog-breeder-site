@@ -48,6 +48,7 @@ const navItems: NavItem[] = [
     label: "Resources",
     children: [
       { label: "Food & Supplements", href: "/resources" },
+      { label: "Training", href: "/resources/training" },
       {
         label: "Shopping Essentials (Amazon)",
         href: "https://www.amazon.com/hz/wishlist/ls/3G0FTAFNV4PWJ?ref_=wl_share",
