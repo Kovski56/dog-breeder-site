@@ -4,6 +4,13 @@ import { badges, site } from "@/lib/site";
 import GalleryCarousel from "@/components/GalleryCarousel";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 
+const availablePuppies = [
+  { src: "/images/puppies/available-1.jpg", alt: "Curly red Australian Labradoodle puppy held in gentle hands" },
+  { src: "/images/puppies/available-2.jpg", alt: "Deep red Australian Labradoodle puppy with a white chest, held outdoors" },
+  { src: "/images/puppies/available-3.jpg", alt: "Red and white Australian Labradoodle puppy standing on a white chair" },
+  { src: "/images/puppies/available-4.jpg", alt: "Red and white parti Australian Labradoodle puppy being held" },
+];
+
 export default function Home() {
   return (
     <main className="flex-1">
@@ -133,6 +140,29 @@ export default function Home() {
                   Application
                 </Link>
               </div>
+            </div>
+          </div>
+
+          {/* Puppy photos */}
+          <div className="mx-auto mt-14 max-w-5xl">
+            <h3 className="text-center text-2xl font-bold tracking-tight text-brand">
+              Meet the Puppies
+            </h3>
+            <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+              {availablePuppies.map((puppy) => (
+                <div
+                  key={puppy.src}
+                  className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5"
+                >
+                  <Image
+                    src={puppy.src}
+                    alt={puppy.alt}
+                    fill
+                    sizes="(min-width: 1024px) 256px, (min-width: 768px) 25vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
