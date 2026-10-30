@@ -13,18 +13,19 @@ const puppies = [
     name: "Mr Green Jeans",
     src: "/images/puppies/mr-green-jeans.jpg",
     alt: "Mr Green Jeans, a red and white Australian Labradoodle puppy standing on a white chair",
+    position: "50% 61%",
   },
   {
     name: "Ms Pinky",
     src: "/images/puppies/ms-pinky.jpg",
     alt: "Ms Pinky, a deep red Australian Labradoodle puppy resting on a white blanket",
-    position: "65% 50%",
+    position: "37% 50%",
   },
   {
     name: "Blossom",
     src: "/images/puppies/blossom.jpg",
     alt: "Blossom, a red Australian Labradoodle puppy lying on a white couch with her head tilted",
-    position: "70% 50%",
+    position: "22% 50%",
   },
 ];
 
@@ -92,7 +93,7 @@ export default function AvailablePuppiesPage() {
                 key={puppy.name}
                 className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5"
               >
-                <div className="relative aspect-[3/4] w-full">
+                <div className="relative aspect-square w-full">
                   <Image
                     src={puppy.src}
                     alt={puppy.alt}
