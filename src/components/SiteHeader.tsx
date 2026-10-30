@@ -20,7 +20,7 @@ const navItems: NavItem[] = [
   {
     label: "Puppies",
     children: [
-      { label: "Available Puppies", href: "/#upcoming-litter" },
+      { label: "Available Puppies", href: "/available-puppies" },
       { label: "Apply To Adopt", href: "/inquiries" },
     ],
   },
