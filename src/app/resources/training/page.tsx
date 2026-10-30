@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     "Premium dog training from Right Turn Obedience — programs for puppies and dogs of all sizes, with 2 free home sessions included.",
 };
 
-const PHONE_DISPLAY = "442-242-5244";
-const PHONE_HREF = "tel:+14422425244";
+const PHONE_DISPLAY = "(909) 261-2913";
+const PHONE_HREF = "tel:+19092612913";
 
 type Program = {
   name: string;
