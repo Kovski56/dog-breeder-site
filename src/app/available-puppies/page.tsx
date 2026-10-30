@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Available Puppies",
   description:
-    "Meet the available Australian Labradoodle puppies from Lily's Labradoodles — now accepting reservations.",
+    "Meet the available Australian Labradoodle puppies from Lily's Labradoodles — available now.",
 };
 
 const puppies = [
@@ -43,7 +43,7 @@ export default function AvailablePuppiesPage() {
           Available Puppies
         </h1>
         <p className="mx-auto mt-3 max-w-xl px-6 text-xl font-bold text-white/90">
-          We are now accepting reservations for this wonderful litter from Ruby &amp; Roo.
+          Meet the wonderful puppies from Ruby &amp; Roo&apos;s litter, available now.
         </p>
       </section>
 
@@ -54,7 +54,7 @@ export default function AvailablePuppiesPage() {
             Ruby &amp; Roo&apos;s Litter
           </p>
           <h2 className="mt-1 text-3xl font-bold tracking-tight text-brand">
-            Accepting Reservations
+            Available Now
           </h2>
 
           <dl className="mx-auto mt-6 grid max-w-xl gap-3 text-left text-foreground/80 sm:grid-cols-2">
