@@ -17,12 +17,14 @@ const puppies = [
   {
     name: "Ms Pinky",
     src: "/images/puppies/ms-pinky.jpg",
-    alt: "Ms Pinky, a deep red Australian Labradoodle puppy with a white chest, held outdoors",
+    alt: "Ms Pinky, a deep red Australian Labradoodle puppy resting on a white blanket",
+    position: "65% 50%",
   },
   {
     name: "Blossom",
     src: "/images/puppies/blossom.jpg",
-    alt: "Blossom, a curly red Australian Labradoodle puppy held in gentle hands",
+    alt: "Blossom, a red Australian Labradoodle puppy lying on a white couch with her head tilted",
+    position: "70% 50%",
   },
 ];
 
@@ -97,6 +99,7 @@ export default function AvailablePuppiesPage() {
                     fill
                     sizes="(min-width: 1024px) 320px, (min-width: 640px) 45vw, 100vw"
                     className="object-cover"
+                    style={puppy.position ? { objectPosition: puppy.position } : undefined}
                   />
                 </div>
                 <p className="px-6 py-5 text-center font-handwriting text-4xl font-bold text-brand">
